@@ -10,12 +10,6 @@ top: 90px;
 width: 150px;
 height: 320px;
 margin:auto;
--moz-perspective:1200px;
--moz-perspective-origin:50% 50%;
--o-perspective:1200px;
--o-perspective-origin:50% 50%;
--ms-perspective:1200px;
--ms-perspective-origin:50% 50%;
 -webkit-perspective:1200px;
 -webkit-perspective-origin:50% 50%;
 
@@ -27,21 +21,13 @@ width:200px;
 height:200px;
 margin:0 auto;
 
--moz-transition: -moz-transform 1s ease-out;
--ms-transition: -ms-transform 1s ease-out;
--o-transition: -o-transform 1s ease-out;
 -webkit-transition: -webkit-transform 1s ease-out;
 transition: transform 1s ease-out;
 
--moz-transform-style: preserve-3d;
--ms-transform-style: preserve-3d;
--o-transform-style: preserve-3d;
 -webkit-transform-style: preserve-3d;
 transform-style: preserve-3d;
 
--moz-transform: rotateX(75deg) rotate(45deg);
--o-transform: rotateX(75deg) rotate(45deg);
--ms-transform: rotateX(75deg) rotate(45deg);
+
 -webkit-transform: rotateX(75deg) rotate(45deg);
 transform: rotateX(75deg) rotate(45deg);
 
@@ -49,21 +35,13 @@ transform: rotateX(75deg) rotate(45deg);
 
 .triangle, 
 .square {
--moz-transform-style:preserve-3d;
--o-transform-style:preserve-3d;
--ms-transform-style:preserve-3d;
 -webkit-transform-style:preserve-3d;
 transform-style:preserve-3d;
 
--moz-transform-origin: left top;
--ms-transform-origin: left top;
--o-transform-origin: left top;
 -webkit-transform-origin: left top;
 transform-origin: left top;
 
--moz-transition: -moz-transform 200ms ease-out;
--ms-transition: -ms-transform 200ms ease-out;
--o-transition: -o-transform 200ms ease-out;
+
 -webkit-transition: -webkit-transform 200ms ease-out;
 transition: transform 200ms ease-out;
 
@@ -102,9 +80,6 @@ cursor:pointer;
 /* note that translation includes border set in '.side' CSS Class */
 .side1 {
 /* square */
--moz-transform: translatez(0);
--ms-transform: translatez(0);
--o-transform: translatez(0);
 -webkit-transform: translatez(0);
 transform: translatez(0);
 background:rgba(0, 0, 0, 0.7)
@@ -112,36 +87,27 @@ background:rgba(0, 0, 0, 0.7)
 
 .side2 {
 /* triangle */
--moz-transform: translatex(0) rotatey(125deg) rotatez(90deg);
--ms-transform: translatex(0) rotatey(125deg) rotatez(90deg);
--o-transform: translatex(0) rotatey(125deg) rotatez(90deg);
+
 -webkit-transform: translatex(0) rotatey(125deg) rotatez(90deg);
 transform: translatex(0) rotatey(125deg) rotatez(90deg)
 }
 
 .side3 {
 /* triangle */
--moz-transform: translatex(200px) rotatez(90deg) rotatex(55deg);
--ms-transform: translatex(200px) rotatez(90deg) rotatex(55deg);
--o-transform: translatex(200px) rotatez(90deg) rotatex(55deg);
+
 -webkit-transform: translatex(200px) rotatez(90deg) rotatex(55deg);
 transform: translatex(200px) rotatez(90deg) rotatex(55deg)
 }
 
 .side4 {
 /* triangle */
--moz-transform: translatez(0) rotatex(55deg);
--ms-transform: translatez(0) rotatex(55deg);
--o-transform: translatez(0) rotatex(55deg);
+
 -webkit-transform: translatez(0) rotatex(55deg);
 transform: translatez(0) rotatex(55deg)
 }
 
 .side5 {
 /* triangle */
--moz-transform: translatey(200px) rotatex(125deg);
--ms-transform: translatey(200px) rotatex(125deg);
--o-transform: translatey(200px) rotatex(125deg);
 -webkit-transform: translatey(200px) rotatex(125deg);
 transform: translatey(200px) rotatex(125deg)
 }
