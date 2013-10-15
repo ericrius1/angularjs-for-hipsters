@@ -10,8 +10,6 @@ top: 90px;
 width: 150px;
 height: 320px;
 margin:auto;
--webkit-perspective:1200px;
--webkit-perspective-origin:50% 50%;
 
 }
 
@@ -21,28 +19,22 @@ width:200px;
 height:200px;
 margin:0 auto;
 
--webkit-transition: -webkit-transform 1s ease-out;
 transition: transform 1s ease-out;
 
--webkit-transform-style: preserve-3d;
 transform-style: preserve-3d;
 
 
--webkit-transform: rotateX(75deg) rotate(45deg);
 transform: rotateX(75deg) rotate(45deg);
 
 }
 
 .triangle, 
 .square {
--webkit-transform-style:preserve-3d;
 transform-style:preserve-3d;
 
--webkit-transform-origin: left top;
 transform-origin: left top;
 
 
--webkit-transition: -webkit-transform 200ms ease-out;
 transition: transform 200ms ease-out;
 
 }
@@ -80,7 +72,6 @@ cursor:pointer;
 /* note that translation includes border set in '.side' CSS Class */
 .side1 {
 /* square */
--webkit-transform: translatez(0);
 transform: translatez(0);
 background:rgba(0, 0, 0, 0.7)
 }
@@ -88,27 +79,23 @@ background:rgba(0, 0, 0, 0.7)
 .side2 {
 /* triangle */
 
--webkit-transform: translatex(0) rotatey(125deg) rotatez(90deg);
 transform: translatex(0) rotatey(125deg) rotatez(90deg)
 }
 
 .side3 {
 /* triangle */
 
--webkit-transform: translatex(200px) rotatez(90deg) rotatex(55deg);
 transform: translatex(200px) rotatez(90deg) rotatex(55deg)
 }
 
 .side4 {
 /* triangle */
 
--webkit-transform: translatez(0) rotatex(55deg);
 transform: translatez(0) rotatex(55deg)
 }
 
 .side5 {
 /* triangle */
--webkit-transform: translatey(200px) rotatex(125deg);
 transform: translatey(200px) rotatex(125deg)
 }
 
